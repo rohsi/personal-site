@@ -53,7 +53,7 @@ display: none;
 
 #wrapper.toggled #page-content-wrapper {
   position: absolute;
-  margin-right: -220px;
+  margin-right: 320px;
 }
 
 /*-------------------------------*/
@@ -134,7 +134,8 @@ padding: 0;
   display: block;
   color: #ddd;
   text-decoration: none;
-  padding: 10px 15px 10px 30px;    
+  padding: 10px 15px 10px 30px;   
+  font-size: 20px; 
 }
 
 .sidebar-nav li a:hover,
@@ -174,6 +175,7 @@ padding: 0;
   color: #ddd;
   background:#212531;
   background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
+  font-size: 20px;
 }
 .sidebar-nav .dropdown-menu {
   position: relative;
@@ -188,53 +190,7 @@ padding: 0;
 .dropdown-menu.show {
   top: 0;
 }
-/*Fontawesome icons*/
-.nav.sidebar-nav li a::before {
-  font-family: 'Font Awesome\ 5 Free';
-  content: "\f12e";
-  vertical-align: baseline;
-  display: inline-block;
-  padding-right: 5px;
-}
-a[href*="#home"]::before {
-content: "\f015" !important;
-}
-a[href*="#about"]::before {
-content: "\f129" !important;
-}
-a[href*="#events"]::before {
-content: "\f073" !important;
-}
-a[href*="#events"]::before {
-content: "\f073" !important;
-}
-a[href*="#team"]::before {
-content: "\f0c0" !important;
-}
-a[href*="#works"]::before {
-content: "\f0b1" !important;
-}
-a[href*="#pictures"]::before {
-content: "\f03e" !important;
-}
-a[href*="#videos"]::before {
-content: "\f03d" !important;
-}
-a[href*="#books"]::before {
-content: "\f02d" !important;
-}
-a[href*="#art"]::before {
-content: "\f1fc" !important;
-}
-a[href*="#awards"]::before {
-content: "\f02e" !important;
-}
-a[href*="#services"]::before {
-content: "\f013" !important;
-}
-a[href*="#contact"]::before {
-content: "\f086" !important;
-}
+
 a[href*="#followme"]::before {
 content: "\f099" !important;
 color: #0084b4;
