@@ -1,15 +1,15 @@
 .newpage {
-
+	text-align: center;
 	background-image: linear-gradient(
 		rgba(56,70,77,0.9),
 		rgba(56,70,77,0.9)),
 		url('../assets/mountain.jpg');
 	background-size: cover;
 	background-attachment: fixed;
-	height: 101vh;
+	height: 100vh;
     display: flex;
 	flex-direction: column;
-	justify-content:space-around;
+	justify-content:center;
 	align-items: center;
 	color: #eee;
 
@@ -33,7 +33,35 @@
   }
   
   .img-me {
+	  display: inline-block;	
     height: 16rem;
     margin-bottom: 4rem;
     border-radius: 50%;
 }
+
+
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	.newpage{
+
+	text-align:center;
+	height:100%;
+	padding: 10%;
+	width: 100%;
+	display: block;
+
+  }
+
+  .img-me {
+	  display: inline-block;
+    height: 16rem;
+	margin-bottom: 4rem;
+	padding: 0px;
+    border-radius: 50%;
+}
+p{
+	width: 100%;
+	display:inline-block;
+}
+}
+  
