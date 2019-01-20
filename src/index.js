@@ -5,16 +5,23 @@ require('./styles/index.scss');
 require('./scripts/navbar.js');
 require('./scripts/aboutme.js');
 require('./scripts/certificates.js');
+
+require('ionicons');
 import Rellax from 'rellax';
 
-new WOW().init();
+import WOW from 'wow.js';
+
+
+
 import PopperJs from 'popper.js';
 import 'bootstrap';
-
 
 import jquery from 'jquery';
 
 // Accepts any class name
+
+new WOW().init();
+
 var rellax = new Rellax('.rellax', {
     center: true,
     // round: true,
