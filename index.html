@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rohit Sinha</title>
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="Webpack basic starter project">
+    <meta name="Description" content="A simple webpack starter project for your basic web development needs." />
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Webpack basic starter project" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://lifenautjoe.github.io/webpack-starter-basic/" />
+    <meta property="og:image" content="https://i.snag.gy/i3eMBc.jpg" />
+
+
+    <meta property="og:description" content="A simple webpack starter project for your basic web development needs." />
+    <!-- Mobile header color for Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#ff4970">
+    <!-- Mobile header color Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#ff4970">
+    <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <script src="https://unpkg.com/ionicons@4.5.1/dist/ionicons.js"></script>
+
+<link rel="apple-touch-icon" sizes="57x57" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="awesome-project}}"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="awesome-project}}"><link rel="icon" type="image/png" sizes="32x32" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/favicon-16x16.png"><link rel="shortcut icon" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1536x2008.png"><link href="styles.6f88990b3f2985fd2a6b.css" rel="stylesheet"></head>
+
+<body>
+
+
+    <div class="navigation">
+        <div id="wrapper">
+            <div class="overlay"></div>
+
+            <!-- Sidebar -->
+            <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+                <ul class="nav sidebar-nav">
+                    <div class="sidebar-header">
+                        <div class="sidebar-brand">
+                            <a href="#">Home</a></div>
+                    </div>
+
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#courses">Courses</a></li>
+
+
+                    <li><a href="#events">Resume</a></li>
+
+
+
+                    <li class="dropdown">
+                        <a href="#works" class="dropdown-toggle" data-toggle="dropdown">Sample Vue Codes <span class="caret"></span></a>
+                        <ul class="dropdown-menu animated fadeInLeft" role="menu">
+                            <div class="dropdown-header">Dropdown heading</div>
+                            <li><a href="#pictures">Pictures</a></li>
+                            <li><a href="#videos">Videeos</a></li>
+
+                        </ul>
+                    </li>
+
+
+
+
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+
+            </nav>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                    <span class="hamb-top"></span>
+                    <span class="hamb-middle"></span>
+                    <span class="hamb-bottom"></span>
+                </button>
+
+            </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+    </div>
+
+
+    <header class="page " data-rellax-speed="1">
+
+
+        <div class="text rellax animated  slideInLeft delay-1s" data-rellax-speed="-2">
+            <h2>Rohit Pankaj Sinha</h2>
+
+
+
+        </div>
+        <div class="text rellax animated  slideInRight delay-1s" data-rellax-speed="-4">
+
+
+
+            <h3> Front End Developer</h3>
+        </div>
+        <div class="icon">
+            <a href="https://github.com/rohsi/rohsi.github.io" target="blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/" target="blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://wa.me/919619383721">
+
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+        </div>
+        <!-- /#wrapper -->
+    </header>
+
+
+    <section class="newpage " id="about" data-rellax-speed="1.5" style="position:sticky;">
+        <img src="Akshay_Kumar.bb9558969ad12623c727.jpg" class="img-me " alt="Jonas Schmedtmann">
+        <h1>HI, I'M Rohit!</h3>
+            <p class="wow animated slideInLeft  ">
+                I’m a web designer and developer with a great passion for building new things from scratch.
+                I live in the charming city of Lisbon where I create beautiful websites, just like the one you’re about
+                to build in one of my courses. I love everything about tech, riding my bike, and the beach in the
+                summer.
+            </p>
+            <p class="wow animated slideInLeft ">
+                As an online instructor, I get to mix my two great passions: building beautiful websites and
+                teaching. If I had to describe my coding courses in one sentence,<span>These are exactly the
+                    courses I wish I had when I first started with web design and development”. </span>
+            </p>
+            <p class="wow animated slideInLeft  ">
+                I would say I want to spare you the
+                hassle of going through uncountable books and articles, so I packed everything I learned about building
+                websites right into my video courses.
+            </p>
+            <p class="wow animated slideInLeft  ">
+                I guarentee 100% to offer the best value in all my courses, so
+                you can achieve your goals! However, if you don't find value in them for any reason, I will give you a
+                full refund of your money during 30 days. Plus, I will be available to answer all the questions you
+                might have along your coding journey.
+            </p>
+            <p class="wow animated slideInLeft ">
+                So, let's start learning today!
+            </p>
+    </section>
+
+    <section class="
+            certificates " data-rellax-speed=" 2" id='courses'>
+        <div id="work-experience" class="sectionClass">
+            <div class="row ">
+                <div class="sectiontitle">
+                    <h2>Certificates</h2>
+                    <span class="headerLine"></span>
+                </div>
+                <div class="fullWidth eight columns">
+                    <ul class="cbp_tmtimeline">
+                        <li>
+                            <div class="cbp_tmicon cbp_tmicon-phone ">
+                                <i class="fas fa-award fa-10x "></i>
+                            </div>
+                            <div class="cbp_tmlabel wow fadeInRight animated">
+                                <h3>
+                                    <a href="https://www.udemy.com/vuejs-2-the-complete-guide/" target="_blank">
+                                        Vue JS
+                                        2 - The
+                                        Complete Guide (incl. Vue Router & Vuex)</a>
+
+
+                                </h3>
+
+                                <h4>Udemy</h4>
+                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit.
+                                    Fugit obcaecati ipsa quae, iusto laudantium qui, nisi eum modi perspiciatis
+                                    quasi
+                                    facilis corporis iure soluta enim incidunt itaque aspernatur sequi tempora.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cbp_tmicon cbp_tmicon-screen">
+                                <i class="fas fa-award fa-10x"></i>
+                            </div>
+                            <div class="cbp_tmlabel wow fadeInRight animated">
+                                <h3><a href="https://www.udemy.com/build-web-apps-with-vuejs-firebase/learn/v4/overview"
+                                        target="blank">
+                                        Build Web Apps with Vue JS 2 & Firebase
+
+                                    </a></h3>
+                                <h4>Udemy</h4>
+                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit.
+                                    Deserunt quasi perspiciatis, aliquid sed maiores accusamus. Adipisci quidem
+                                    nostrum
+                                    quos quae doloremque esse a, ipsum earum, recusandae omnis dignissimos et sint.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cbp_tmicon cbp_tmicon-screen">
+                                <i class="fas fa-award fa-10x"></i>
+                            </div>
+                            <div class="cbp_tmlabel wow fadeInRight animated">
+                                <h3><a href="https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/overview"
+                                        target="blank">
+                                        React 16.6 - The Complete Guide (incl. React Router & Redux)
+                                    </a></h3>
+                                <h4>Udemy</h4>
+                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit.
+                                    Deserunt quasi perspiciatis, aliquid sed maiores accusamus. Adipisci quidem
+                                    nostrum
+                                    quos quae doloremque esse a, ipsum earum, recusandae omnis dignissimos et sint.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cbp_tmicon cbp_tmicon-mail">
+                                <i class="fas fa-award fa-10x"></i>
+                            </div>
+                            <div class="cbp_tmlabel wow fadeInRight animated">
+                                <h3><a href='https://www.udemy.com/advanced-css-and-sass/learn/v4/overview' target='blank'>
+                                        Advanced CSS and Sass: Flexbox, Grid, Animations and More!</a></h3>
+                                <h4>Udemy</h4>
+                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit.
+                                    Nulla labore atque alias ipsa, nam quod rerum repellat cumque, aliquam sequi
+                                    vitae
+                                    voluptatibus cum soluta incidunt tempore accusamus eius sed excepturi!Lorem
+                                    ipsum
+                                    dolor sit amet,
+                                    consectetur adipisicing elit. Tempora natus veritatis aperiam repellendus dolor
+                                    vel, expedita assumenda eos, mollitia quae ullam esse voluptas vero. Dolores
+                                    culpa
+                                    eaque vitae eum quibusdam?</p>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cbp_tmicon cbp_tmicon-phone">
+                                <i class="fas fa-award fa-10x"></i>
+                            </div>
+                            <div class="cbp_tmlabel wow fadeInRight animated">
+                                <h3><a href="https://www.udemy.com/the-complete-javascript-course/learn/v4/overview"
+                                        target="blank">
+                                        The Complete JavaScript Course 2019: Build Real Projects!</a></h3>
+                                <h4>Udemy</h4>
+                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit.
+                                    Esse iusto, possimus hic at quisquam, incidunt illo asperiores et nobis, qui
+                                    nulla
+                                    consequatur molestiae quibusdam expedita dignissimos? Iste eum velit quos.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <footer class="footer" id="contact">
+        <div class="flex container footer__primary">
+            <div>
+
+                <a href="https://github.com/rohsi/rohsi.github.io" target="blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://www.linkedin.com/" target="blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <a href="https://wa.me/919619383721">
+
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </div>
+            <div class="footer__copyright">
+                Copyright &copy; 2019 Rohit Pankaj Sinha
+            </div>
+
+            </nav>
+        </div>
+    </footer>
+
+<script type="text/javascript" src="main.dd406b8e6b5c878cc233.js"></script></body>
+
+</html>
