@@ -6,11 +6,11 @@
 		url('../assets/mountain.jpg');
 	background-size: cover;
 	background-attachment: fixed;
-	height: 100vh;
-    display: flex;
-	flex-direction: column;
-	justify-content:center;
-	align-items: center;
+	//height: 100vh;
+    // display: flex;
+	// flex-direction: column;
+	// justify-content:center;
+	// align-items: center;
 	color: #eee;
 
 	
@@ -33,35 +33,48 @@
   }
   
   .img-me {
-	  display: inline-block;	
     height: 16rem;
     margin-bottom: 4rem;
     border-radius: 50%;
 }
 
 
+
 @media only screen and (max-width: 768px) {
 	/* For mobile phones: */
-	.newpage{
+	
+  
+	
+	.newpage {
+		padding: 0%;
 
-	text-align:center;
-	height:100%;
-	padding: 10%;
-	width: 100%;
-	display: block;
+		p{
 
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		width: 80%;
+		margin: 20px auto;
+	}
+	.whole{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	  
+	
+}
+
+	
   }
-
-  .img-me {
-	  display: inline-block;
-    height: 16rem;
-	margin-bottom: 4rem;
-	padding: 0px;
-    border-radius: 50%;
-}
-p{
-	width: 100%;
-	display:inline-block;
-}
-}
+ 
+  /* 
+	##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+	
+	//CSS
+	
+  }
   
