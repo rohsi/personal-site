@@ -7,7 +7,6 @@ require('./scripts/aboutme.js');
 require('./scripts/certificates.js');
 
 require('ionicons');
-import Rellax from 'rellax';
 
 import WOW from 'wow.js';
 
@@ -22,12 +21,6 @@ import jquery from 'jquery';
 
 new WOW().init();
 
-var rellax = new Rellax('.rellax', {
-    center: true,
-    // round: true,
-    vertical: true
-
-});
 
 document.addEventListener("DOMContentLoaded", () => {
 
