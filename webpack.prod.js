@@ -5,6 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin'); //installed via npm
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const buildPath = path.resolve(__dirname, 'dist');
 
@@ -75,7 +76,7 @@ module.exports = {
             },
             {
                 // Load all images as base64 encoding if they are smaller than 8192 bytes
-                test: /\.(pdf|CNAME)$/,
+                test: /\.(pdf)$/,
                 use: [
                     {
                         loader: 'url-loader',
@@ -85,7 +86,8 @@ module.exports = {
                         }
                     }
                 ]
-            }
+            },
+
         ]
     },
     plugins: [
@@ -138,6 +140,7 @@ module.exports = {
                 }
             },
             canPrint: true
-        })
+        }),
+        new CopyWebpackPlugin([{ from: 'CNAME', to: '' }]),
     ]
 };

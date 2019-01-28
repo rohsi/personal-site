@@ -2,6 +2,6 @@
 vcs.xml
 *.iml
 node_modules
+dist
 .history/
-dist/
 .cache
