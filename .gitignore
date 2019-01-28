@@ -4,3 +4,4 @@ vcs.xml
 node_modules
 .history/
 dist/
+.cache
