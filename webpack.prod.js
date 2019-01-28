@@ -62,12 +62,25 @@ module.exports = {
             },
             {
                 // Load all images as base64 encoding if they are smaller than 8192 bytes
-                test: /\.(pdf|png|jpg|gif)$/,
+                test: /\.(png|jpg|gif)$/,
                 use: [
                     {
                         loader: 'url-loader',
                         options: {
                             name: '[name].[hash:20].[ext]',
+                            limit: 8192
+                        }
+                    }
+                ]
+            },
+            {
+                // Load all images as base64 encoding if they are smaller than 8192 bytes
+                test: /\.(pdf|CNAME)$/,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            name: '[name].[ext]',
                             limit: 8192
                         }
                     }
