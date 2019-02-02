@@ -28,7 +28,6 @@
         "jquery": "^3.3.1",
         "normalize.css": "^8.0.0",
         "popper.js": "^1.14.6",
-        "rellax": "^1.7.2",
         "wow.js": "^1.2.2"
     },
     "devDependencies": {

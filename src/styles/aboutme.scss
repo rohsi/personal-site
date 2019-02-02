@@ -8,16 +8,18 @@
 	background-attachment: fixed;
 	// height: 100vh;
 	min-height: 100vh;
-    // display: flex;
-	// flex-direction: column;
-	// justify-content:center;
+     display: flex;
+	 flex-direction: column;
+	 justify-content:space-evenly;
 	// align-items: center;
 	color: #eee;
-	padding-bottom: 70px!important;	
-	padding-left: 12rem;
+	//padding-bottom: 70px!important;
+	//padding-left: 12rem;
 	
 
 	h3, h4 {
+        margin-top:1%;
+        font-size:3.3rem;
 		text-transform: uppercase;
 		word-spacing: 1px;
 	}
@@ -27,9 +29,9 @@
 		max-width: 114rem;
 		margin: 0 auto 2.5rem auto;
 	
-		width: 80%;
+		width: 60%;
 		text-align: left;
-		font-size: 20px;
+		font-size: 23px;
 	}
   }
   
@@ -37,10 +39,9 @@
     
     
     border-radius: 50%;
-    margin-top: 45px!important;
+      margin:0 auto;
     width: 300px;
 	height: 225px;
-	margin-bottom: 45px!important;
 }
 
 
@@ -51,22 +52,21 @@
   
 	
 	.newpage {
-		padding: 0%;
+		//padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        p {
 
-		p{
-
-		
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
 		width: 80%;
 		margin: 20px auto;
 	}
-	.whole{
-		padding-top: 15px;
-		padding-bottom: 15px;
-	}
-	  
+        h3{
+            margin-top:3%;
+        }
+        .img-me {
+            margin-top:3%;
+        }
 	
 }
 
@@ -82,4 +82,3 @@
 	//CSS
 	
   }
-  
