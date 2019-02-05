@@ -3,10 +3,8 @@ window.$ = window.jQuery = require("jquery");
 require('normalize.css/normalize.css');
 require('./styles/index.scss');
 require('./scripts/navbar.js');
-require('./scripts/aboutme.js');
-require('./scripts/certificates.js');
 
-require('ionicons');
+// require('ionicons');
 
 import WOW from 'wow.js';
 
